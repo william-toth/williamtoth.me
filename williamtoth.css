@@ -17,6 +17,17 @@ h1 {
     font-weight: normal;
 }
 
+h3 {
+    color: #457b9d;
+    text-align: center;
+    font-family: Century Gothic;
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+    font-weight: normal;
+    position: relative;
+    bottom: 1rem;
+}
+
 h2 {
     text-align: center;
     font-family: Century Gothic;
@@ -127,7 +138,27 @@ nav button:hover, nav button:focus {
     height: 500px;
 }
 
-.exp {
+#codenames {
+    width: 600px;
+    height: 450px;
+}
+
+#chess {
+    width: 600px;
+    height: 450px;
+}
+
+#explorers {
+    width: 600px;
+    height: 500px;
+}
+
+#markov {
+    width: 700px;
+    height: 200px;
+}
+
+.exp, .exp1 {
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -136,5 +167,9 @@ nav button:hover, nav button:focus {
 
 .exp:hover {
     box-shadow: 0px 15px 7px black;
+    transform: translateY(-15px);
+}
+
+.exp1:hover {
     transform: translateY(-15px);
 }

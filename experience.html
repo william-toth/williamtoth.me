@@ -11,23 +11,39 @@
         <h1>William Toth</h1>
         <form action="/submit">
             <button type="submit" formaction="index.html">About Me</button>
-            <button type="button">Experience</button>
+            <button type="button">Projects</button>
+            <button type="submit" formaction="music.html">Music</button>
             <button type="submit" formaction="https://github.com/william-toth/Resume/blob/main/Resume.pdf">Resume</button>
         </form>
     </nav>
-    <h2>Project #1 (in progress)</h2>
-    <h2>Project #2 (in progress)</h2>
+    <h2>CodeNames | <a href="https://github.com/william-toth/CodeNames">Github</a> | <a href="https://glacial-savannah-66298.herokuapp.com/">Web App (in progress)</a> </h2>
+    <img src="codenames2.png" id="codenames" class="exp1">
+    <div class="proj_descript">
+        Codenames is a fun 4+ person game that I played with my friends often in high school. After I learned HTML/CSS/JS, Node, and Express, I realized I could make my own Codenames web app (server currently in progress), which is exactly what I am doing. In Codenames, each team (red and blue) has a spymaster and numerous players. The spymaster, who can see the word colors will say a word and a number, the word connecting that teams' words on the grid and the number specifying how many it connects to, and it is up to the players to guess which words are theirs. The first team to get all of their words wins!
+    </div>
+
+    <h2>Search Engine | <a href="https://github.com/william-toth/SearchEngine">Github</a></h2>
+    <img src="query.png" id="query" class="exp">
+    <div class="proj_descript">
+        This Search Engine was the culminating project of my Software Development course. It contains a crawler, which, given a URL and depth, crawls the web, saving html files, an indexer, which reads saved files, creating an inverted index data structure of words and their number of occurences in each html file, and a querier, which, given a query, will use the inverted index data structure to search the web and subsequently return URLS matching the query. The above output is the result of querying on an index creating by crawling our course example website.
+    </div>
+
     <h2>Data Science Project: Evolution of Popular Music | <a href="https://github.com/william-toth/Data_Analysis_Evolution_of_Popular_Music/blob/master/Report.pdf">Github</a><br></h2>
     <img src="data.jpg" id="data" class="exp">
     <div class="proj_descript">
         In this project, I analyze data from every song in the Billboard Hot 100 from 1960 - 2010 in an attempt to understand which quantitative music features contribute to shifts in the musical zeitgeist. Through the random decision forest algorithm, I then predict the era and style of a given song based upon 16 quantitative musical features.
     </div>
-    <br>
-    <h2>EP: The Infinite Dream | <a href="https://fanlink.to/theinfinitedream">FanLink</a></h2>
-    <img src="ep.png" id="ep" class="exp">
-    <br>
+
+    <h2>Markov Model: Part of Speech Tagger | <a href="https://github.com/william-toth/Java">Github</a><br></h2>
+    <img src="markov.png" id="markov" class="exp">
     <div class="proj_descript">
-        While not computer science related, I thought it'd be nice to include one of my creative endeavors on this page. "The Infinite Dream" is a culmination of my musical work from Summer 2021 (all produced in Logic Pro X). It has no lyrics, and I can only describe the music style as atmospheric and synthy. Enjoy!
+        This project uses hidden markov modeling and the viterbi algorithm to predict part of speech given a body of text. Currently, it is set to train the algorithm with the Brown Corpus, but you can train it with any two text and POS files.
+    </div>
+
+    <h2>Graphics Project: Chess</h2>
+    <img src="chess.gif" id="chess" class="exp">
+    <div class="proj_descript">
+        This scene, inspired by the Queen's Gambit, served as the final project for my graphics class. Everything you see here is almost entirely from scratch. Coded primarily in C++ and OpenGL, this projects implements noise generation, texturing, normal/bump mapping, shading, and lot of linear algebra. I had a lot of fun coding this, especially given the liberty of creativity in this class.
     </div>
     <br>
 </body>
