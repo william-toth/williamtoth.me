@@ -4,41 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William Toth</title>
-    <link rel="stylesheet" href="williamtoth.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allan">
 </head>
 <body>
-    <nav>
-        <h1>William Toth</h1>
-        <!-- <h3><a href="https://github.com/william-toth">Github</a> | <a href="https://www.linkedin.com/in/william-toth-054388198/">LinkedIn</a></h3> -->
-        <form action="/submit">
-            <button type="button">About Me</button>
-            <button type="submit" formaction="experience.html">Projects</button>
-            <button type="submit" formaction="music.html">Music</button>
-            <button type="submit" formaction="https://github.com/william-toth/Resume/blob/main/Resume.pdf">Resume</button>
-        </form>
-    </nav>
-    <div id="mid">
-        <div id="about">
-            <p>
-                Hi! My name is Will, and I'm a current Sophomore ('23) at Dartmouth studying Computer Science and Math. I'm most interested in software development and machine learning (especially the intersection of these fields), and am currently working as a web Developer intern at Dartmouth's DIFUSE lab and a research assistant doing physical modeling / simulation.
-            </p>
-            <p>
-                I'm also a musician in my free time. I love making music, and you can check out my EP from summer 2020 <a href="https://fanlink.to/theinfinitedream">here</a>.
-            </p>
+    <nav class="nav">
+        <div class="nav-div">
+            <div class="logo">WilliamToth</div>
+            <div class="link-div">
+                <a href="index.html" class="nav-link">About and Projects</a>
+                <a href="https://drive.google.com/file/d/18-jFpzod4MH4MX8fUYCSnwzJLjybXZHQ/view?usp=sharing" class="nav-link">Resume</a>
+                <a href="music.html" class="nav-link">Music</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
         </div>
-        <div id="mediv">
-            <img src="me.jpg" id="me">
+    </nav>
+    <div class="blank-space"></div>
+    <h2>About</h2>
+    <div class="about-me-div">
+        <div class="about-text">Hi! My name is Will, and I'm a current Sophomore ('23) at Dartmouth studying Computer Science and Math. I'm most interested in software development and machine learning (especially the intersection of these fields), and am currently working as a web Developer intern at Dartmouth's DIFUSE lab and a research assistant doing physical modeling / simulation. I'm also a musician in my free time. I love making music, and you can check out my EP from summer 2020 on the music tab.</div>
+        <img src="img/me.JPG" class="me-photo">
+    </div>
+    <h2>Tech I Love</h2>
+    <div class="langs">
+        <img src="img/5.jpg" class="lang">
+        <img src="img/9.png" class="lang">
+        <img src="img/7.jpg" class="lang">
+        <img src="img/10.png" class="lang">
+        <img src="img/11.png" class="lang">
+
+        <img src="img/12.png" class="lang">
+        <img src="img/8.jpg" class="lang">
+        <img src="img/1.png" class="lang">
+        <img src="img/15.png" class="lang">
+        <img src="img/3.jpg" class="lang">
+        <img src="img/13.png" class="lang">
+        
+        <img src="img/4.jpg" class="lang">
+        <img src="img/6.jpg" class="lang">
+        <img src="img/14.png" class="lang">
+        <img src="img/2.jpg" class="lang">
+    </div>
+    <h2>Projects</h2>
+    <div class="about-div">
+        <div class="proj-text">
+            <h3>NLP Conversation Analysis Web App</h3>
+            <br>
+            This Natural Language Processing web app was the primary project of my time working at Dartmouth's DIFUSE lab and something on which I collaborated with several data scientists and developers. The module has served over 150 Psychology students and has proved very useful for integrating data science into Psychology. The front end uses React, and the backend, coded in Python, uses a Flask app to connect to MongoDB. Students submit a zoom transcript and answer some questions. This data is then passed off to the backend, which stores it and generates visualizations through NLP / ML algorithms, which are then shown back to user. The user also has the opportunity to compare their convserations/visualizations to those of the entire class with aggregate filtering!
+        </div>
+        <img src="difuseconvo.gif" class="proj-photo">
+    </div>
+    <div class="about-div">
+        <img src="codenames3.png" id="codenames" class="proj-photo">
+        <div class="proj-text">
+            <h3>CodeNames</h3>
+            <h4><a href="https://github.com/william-toth/code-names">Github</a> | <a href="https://code-names-2021.netlify.app/">Web App</a></h4>
+            Codenames is a fun 4+ person game that I played with my friends often in high school. To implement this, I used react for the front end and google firebase to update players in real time when a change is made. In Codenames, each team (red and blue) has a spymaster and numerous players. The spymaster, who can see the word colors will say a word and a number, the word connecting that teams' words on the grid and the number specifying how many it connects to, and it is up to the players to guess which words are theirs. The first team to get all of their words wins!
         </div>
     </div>
-    <hr>
-    <div id="list">
-            <span class="bold">Languages:</span><br>Java <span>&#8226;</span> Python <span>&#8226;</span> C/C++ <span>&#8226;</span> HTML/CSS/JavaScript <span>&#8226;</span> LaTeX <span>&#8226;</span> R <span>&#8226;</span> OpenGL
-            <br><span class="bold">Relevant Coursework:</span><br>Algorithms/Data Structures <span>&#8226;</span> Software Design <span>&#8226;</span> Web Development
-            <span>&#8226;</span> Machine Learning <br> Obect Oriented Programming <span>&#8226;</span> Linear Algebra <span>&#8226;</span> Computer Graphics <span>&#8226;</span>
-                Differential Equations <br> Quantum Mechanics <span>&#8226;</span> Design Thinking
-            <br><span class="bold">Other Skills/Libraries: </span><br>Git <span>&#8226;</span> Command Line <span>&#8226;</span> Node/Express/MongoDB/React/etc. <span>&#8226;</span>
-                Logic Pro X <span>&#8226;</span> Microsoft Office
+
+    <div class="about-div">
+        <div class="proj-text">
+            <h3>Search Engine</h3>
+            <h4><a href="https://github.com/william-toth/SearchEngine">Github</a></h4>
+            This Search Engine was the culminating project of my Software Development course. It contains a crawler, which, given a URL and depth, crawls the web, saving html files, an indexer, which reads saved files, creating an inverted index data structure of words and their number of occurences in each html file, and a querier, which, given a query, will use the inverted index data structure to search the web and subsequently return URLS matching the query. The above output is the result of querying on an index creating by crawling our course example website.
+        </div>
+        <img src="query.png" id="query" class="proj-photo">
+    </div>
+    <div class="about-div">
+        <img src="data.jpg" id="data" class="proj-photo">
+        <div class="proj-text">
+            <h3>Data Science Project: Evolution of Popular Music</h3>
+            <h4><a href="https://github.com/william-toth/Data_Analysis_Evolution_of_Popular_Music/blob/master/Report.pdf">Github</a></h4>
+            In this project, I analyze data from every song in the Billboard Hot 100 from 1960 - 2010 in an attempt to understand which quantitative music features contribute to shifts in the musical zeitgeist. Through the random decision forest algorithm, I then predict the era and style of a given song based upon 16 quantitative musical features.
+        </div>
+    </div>
+
+    <div class="about-div">
+        <div class="proj-text">
+            <h3>Markov Model: Part of Speech Tagger</h3>
+            <h4><a href="https://github.com/william-toth/Java">Github</a></h4>
+            This project uses hidden markov modeling and the viterbi algorithm to predict part of speech given a body of text. Currently, it is set to train the algorithm with the Brown Corpus, but you can train it with any two text and POS files.
+        </div>
+        <img src="markov.png" id="markov" class="proj-photo">
+    </div>
+
+    <div class="about-div">
+        <img src="chess.gif" id="chess" class="proj-photo">
+        <div class="proj-text">
+            <h3>Graphics Project: Chess</h3>
+            This scene, inspired by the Queen's Gambit, served as the final project for my graphics class. Everything you see here is almost entirely from scratch. Coded primarily in C++ and OpenGL, this projects implements noise generation, texturing, normal/bump mapping, shading, and lot of linear algebra. I had a lot of fun coding this, especially given the liberty of creativity in this class.
+        </div>
     </div>
     <br>
+    <script src="main.js"></script>
 </body>
 </html>
