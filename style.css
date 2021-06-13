@@ -95,6 +95,10 @@ body {
     transition: 0.5s;
 }
 
+#onnight {
+    width: 300px;
+}
+
 .proj-photo:hover {
     transform: translateY(-5px);
     box-shadow: 0px 5px 15px black;
